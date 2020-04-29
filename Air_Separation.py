@@ -17,7 +17,7 @@ def COMconnect(db_path):
     pro2db = pro2.OpenDatabase(db_path)
 
     #Get a security license (for better performance)
-    # pro2.GetSecuritySeat(2)
+    pro2.GetSecuritySeat(2)
 
     return pro2, pro2db
 
@@ -31,14 +31,16 @@ def COMdisconnect(pro2, pro2db):
 
     return pro2, pro2db
 
-db_path = r"C:\Users\usuario\Dropbox\PythonEnhanced\PROII\Archivo\Air Separation"
-
+db_path = os.path.join(".","Casebook_Air_Separation_Plant.prz")
+db_path = r"C:\PythonEnhanced\Repositorio\Air-Separation\Casebook_Air_Separation_Plant.prz"
 pro2, pro2db = COMconnect(db_path)
 pro2check = pro2db.CheckData
-pro2db = "Nothing"
 pro2run = pro2.RunCalcs(db_path)
 pro2db = pro2.OpenDatabase(db_path)
-Classes_Available = pro2.GetClassCount
-pro2, pro2db = COMdisconnect(pro2, pro2db)    
+
+
+classcount = pro2.GetClassCount
+
+#pro2, pro2db = COMdisconnect(pro2, pro2db)    
 
 
