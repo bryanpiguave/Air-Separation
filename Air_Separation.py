@@ -62,13 +62,13 @@ def COMdisconnect(pro2, pro2db):
 
     return pro2, pro2db
 
-
-db_path_origin= "D:\Bryan\ESPOL\Model_HR_3CDN.prz"
+DB_PATH_ORIGIN = "Model_HR_3CDN.prz"
+db_path_origin= DB_PATH_ORIGIN
 content = read_original_prz(db_path_origin)
 
 db_path="Working_file.prz"
 size = replace_content_file(db_path, content)
-db_path_origin= "D:\Bryan\ESPOL\Model_HR_3CDN.prz"
+db_path_origin= DB_PATH_ORIGIN  
 content = read_original_prz(db_path_origin)
 
 
