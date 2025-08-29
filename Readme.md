@@ -2,7 +2,7 @@
 
 This project simulates an air separation (oxygen production) plant by orchestrating a PRO/II process simulation via Python (COM automation). It enables data extraction, sensitivity analysis, and optimization of key operating variables.
 
-For background and methodology, see: [paper link](https://www.sciencedirect.com/science/article/pii/S2405896321010685).
+For background and methodology, see: [First Paper](https://www.sciencedirect.com/science/article/pii/S2405896321010685) and [Second Paper](https://pubs.acs.org/doi/full/10.1021/acsomega.1c06669).
 
 ## Repository structure
 - `Air_Separation.py`: Python script that connects to PRO/II through COM, loads the case, inspects objects/attributes, runs calculations, and generates a report.
